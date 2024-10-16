@@ -10,9 +10,9 @@ const OrganisationOrders = () => {
         <Col xl={2} className='sidebar-color'>
           <div className='sidebar side-round '>
             <ul className='menu mt-5 px-3 list-unstyled text-white'>
-              <li>
-                Jango
-              </li>
+            <div className=" ">
+                        <h2 className='ps-3 pt-2'>JANGO</h2>
+                    </div>
               <li >
                 <h4>
                   <span><Icon icon="ic:outline-dashboard" width="20" height="20" /></span>

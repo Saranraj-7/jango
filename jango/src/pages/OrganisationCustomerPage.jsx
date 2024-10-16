@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Card, Col, Form, Pagination, Row, Table, Modal } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
-import jangoLogo from '../../src/images/jango.png'; 
+
 
 const OrganisationCustomerPage = () => {
   
@@ -15,9 +15,9 @@ const OrganisationCustomerPage = () => {
     <Row className="m-0 vh-100">
       <Col xl={2} className="sidebar-color p-0">
         <div className="sidebar side-round h-100 d-flex flex-column">
-          <div className="logo-container text-center mt-4 mb-5">
-            <img src={jangoLogo} alt="Logo" className="logo mb-4" />
-          </div>
+        <div className="">
+              <h2 className='ps-3 pt-2'>JANGO</h2>
+            </div>
           <ul className="menu list-unstyled px-3 text-dark">
             <li className="menu-item py-2">
               <h5><Icon icon="ic:outline-dashboard" width="22" height="22" className="me-2" />Dashboard</h5>
@@ -28,6 +28,9 @@ const OrganisationCustomerPage = () => {
             <li className="menu-item py-2">
               <h5><Icon icon="fluent:person-48-regular" width="22" height="22" className="me-2" />Customer Details</h5>
             </li>
+            <li className="menu-item py-2">
+              <h5><Icon icon="fluent:person-48-regular" width="22" height="22" className="me-2" />Delivery Details</h5>
+            </li>
           </ul>
         </div>
       </Col>
@@ -35,20 +38,24 @@ const OrganisationCustomerPage = () => {
 
       <Col xl={10} className="p-4">
 
-        <Card className="p-2 mb-4 card-bg">
-          <h4>Customer Details</h4>
+        <Card className="p-2 mb-4 fs-5 card-bg">
+        Customer Details
         </Card>
 
         <Row className="d-flex justify-content-between align-items-center">
-          <Col xl={3}>
-            <Form.Control type="text" placeholder="Search" className="mt-2" />
+        <Col xl={2}>
+            <Form.Control
+              className='search-bar shadow-sm'
+              type="text"
+              placeholder="Search orders..."
+            />
           </Col>
           <Col xl={2} className="text-end">
             <Button className="btn-danger mt-2" onClick={handleShow}>New User</Button>
           </Col>
         </Row>
 
-        {/* Table */}
+
         <Table striped bordered hover responsive className="mt-4">
           <thead>
             <tr>

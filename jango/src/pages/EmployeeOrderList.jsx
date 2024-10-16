@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Col, Form, Pagination, Row, Table } from 'react-bootstrap';
 import { Icon } from '@iconify/react';
 import '../App.css';
-import jango from '../../src/images/jango.png';
+
 
 const EmployeeOrderList = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -58,9 +58,9 @@ const EmployeeOrderList = () => {
       <Col xl={2} className='sidebar p-3'>
         <div className='sidebar h-100'>
           <ul className='list-unstyled'>
-            <li className='logo-container'>
-              <img src={jango} className="logo" alt="Logo" />
-            </li>
+            <div className=" ">
+                        <h2 className='ps-3 pt-2'>JANGO</h2>
+                    </div>            
             <li className='mb-4 mt-4 '>
               <h5 className='sidebar-item'>
                 <Icon icon="ic:outline-dashboard" width="22" height="22" className='me-2' />
@@ -84,9 +84,7 @@ const EmployeeOrderList = () => {
       </Col>
 
       <Col xl={10} className='p-4'>
-        <Card className='p-3 fs-5 card-bg'>
-          <h4 className='text-dark'>Order List</h4>
-        </Card>
+      <Card className='p-2 fs-5 card-bg'>Orders List</Card>
         <Row className='d-flex justify-content-between mt-3 mb-3'>
           <Col xl={2}>
             <Form.Control

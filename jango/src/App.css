@@ -77,13 +77,9 @@ body {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px; /* Increased width */
+    width: 400px; 
   }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+
   
   .input-group {
     margin-bottom: 15px;
@@ -117,3 +113,18 @@ body {
     background-color: #218838;
   }
   
+
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; 
+    -webkit-appearance: none; 
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    font-size: 14px;
+}

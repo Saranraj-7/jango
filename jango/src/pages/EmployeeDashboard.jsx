@@ -1,21 +1,21 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, Col, Form, Row, Table } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 import '../App.css';
 import dashboard from '../../src/images/dashboard.png'
 import { Icon } from '@iconify/react/dist/iconify.js';
-import jangoLogo from '../../src/images/jango.png'; 
+
 
 
 const EmployeeDashboard = () => {
-  return (
+    return (
 
-    <Row className='p-0 m-0 vh-100'>
+        <Row className='p-0 m-0 vh-100'>
 
-<Col xl={2} className="sidebar-color p-0 ">
+            <Col xl={2} className="sidebar-color p-0 ">
                 <div className="sidebar side-round h-100 d-flex flex-column">
-                    <div className="p-3 text-center">
-                        <img src={jangoLogo} alt="Logo" className="logo " />
+                    <div className="">
+                        <h2 className='ps-3 pt-2'>JANGO</h2>
                     </div>
                     <ul className="menu list-unstyled flex-grow-1 text-dark">
                         <li className="menu-item py-2 px-3 ">
@@ -36,19 +36,19 @@ const EmployeeDashboard = () => {
                                 Delivery Details
                             </h5>
                         </li>
-                      
+
                     </ul>
                 </div>
             </Col>
 
-      <Col xl={10} className='mt-4'>
-      <Card  className='p-2   fs-5 flex-column justify-content-between'>
-        Dashboard
-          </Card>
-      <img className='mt-4 w-100' src={dashboard}  />
-     </Col>
-    </Row>
-  );
+            <Col xl={10} className='p-4'>
+                <Card className='p-2  card-bg fs-5 flex-column justify-content-between'>
+                    Dashboard
+                </Card>
+                <img className='mt-4 w-50' src={dashboard} />
+            </Col>
+        </Row>
+    );
 };
 
 export default EmployeeDashboard;

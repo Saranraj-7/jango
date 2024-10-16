@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card, Col, Form, Pagination, Row, Table } from 'react-bootstrap';
 import '../App.css';
-import jangoLogo from '../../src/images/jango.png'; 
+ 
 import { Icon } from '@iconify/react/dist/iconify.js';
 
 const EmployeeDelivery = () => {
@@ -19,8 +19,8 @@ const EmployeeDelivery = () => {
    
 <Col xl={2} className="sidebar-color p-0 ">
                 <div className="sidebar side-round h-100 d-flex flex-column">
-                    <div className="p-3 text-center">
-                        <img src={jangoLogo} alt="Logo" className="logo " />
+                <div className=" ">
+                        <h2 className='ps-3 pt-2'>JANGO</h2>
                     </div>
                     <ul className="menu list-unstyled flex-grow-1 text-dark">
                         <li className="menu-item py-2 px-3 ">
@@ -46,11 +46,15 @@ const EmployeeDelivery = () => {
             </Col>
 
 
-      <Col xl={10} className='mt-4'>
+      <Col xl={10} className='p-4'>
         <Card className='p-2  fs-5 card-bg'>Delivery Details</Card>
         <Row className='d-flex justify-content-between'>
-          <Col xl={3} >
-            <Form.Control className='mt-4' type="text" placeholder="Search" />
+        <Col xl={2}>
+            <Form.Control
+              className='search-bar shadow-sm mt-4'
+              type="text"
+              placeholder="Search orders..."
+            />
           </Col>
         </Row>
         <Table striped bordered className='mt-4'>

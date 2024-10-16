@@ -2,15 +2,15 @@ import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import dashboard from '../../src/images/dashboard.png';
 import { Icon } from '@iconify/react';
-import jangoLogo from '../../src/images/jango.png'; 
+ 
 
 const OrganisationDashboard = () => {
     return (
         <Row className="m-0 vh-100">
             <Col xl={2} className="sidebar-color p-0 ">
                 <div className="sidebar side-round h-100 d-flex flex-column">
-                    <div className="p-3 text-center">
-                        <img src={jangoLogo} alt="Logo" className="logo mb-4" />
+                    <div className=" ">
+                        <h2 className='ps-3 pt-2'>JANGO</h2>
                     </div>
                     <ul className="menu list-unstyled flex-grow-1 text-dark">
                         <li className="menu-item py-2 px-3 ">
@@ -43,10 +43,10 @@ const OrganisationDashboard = () => {
 
             
             <Col xl={10} className="p-4">
-                <Card className="p-2 mb-4 card-bg">
-                    <h4>Dashboard</h4>
+                <Card className="p-2 fs-5 card-bg mb-4">
+                    Dashboard
                 </Card>
-                <img className="w-100 vh-50" src={dashboard} alt="Dashboard" />
+                <img className="w-50 vh-50" src={dashboard} alt="Dashboard" />
             </Col>
         </Row>
     );
